@@ -8,6 +8,7 @@ import {
   import Register from "./pages/Register";
   import Login from "./pages/Login";
   import './App.css';
+import Entries from "./components/allMedEntries";
 
   
 //   import { cardLoader, deckLoader } from "./loaders";
@@ -19,6 +20,7 @@ import {
         <Route path="/dashboard" element={<Dashboard/>}/>
         <Route path="/signup" element={<Register/>}/>
         <Route path="/login" element={<Login/>}/>
+        <Route path="/entry/create" element={<Entries/>}/>
         {/* <Route index element={<Landing />} loader={deckLoader} />
         <Route path="deck/:id" element={<Deckshow />} loader={cardLoader} />
         <Route

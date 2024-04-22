@@ -17,7 +17,8 @@ const Dashboard = () => {
                 </div>
                 <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg>
+                    <img src="https://api.deepai.org/job-view-file/3050145d-2bec-4481-ac62-9403e7e82950/outputs/output.jpg" width="100%" height="100%" class="object-fit-fill" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false" alt="image"/>
+                    {/* <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" /></svg> */}
                     <div class="container">
                     <div class="carousel-caption text-start">
                         <h1>Example headline.</h1>
@@ -27,7 +28,7 @@ const Dashboard = () => {
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg>
+                <img src="https://api.deepai.org/job-view-file/245217cc-f7e6-4743-911e-f062af81aebb/outputs/output.jpg" width="100%" height="100%" class="object-fit-fill" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false" alt="image"/>
                     <div class="container">
                     <div class="carousel-caption">
                         <h1>Another example headline.</h1>
@@ -37,12 +38,12 @@ const Dashboard = () => {
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg>
+                <img src="https://api.deepai.org/job-view-file/85233656-d7e4-4a8a-ab6c-4817f7448b17/outputs/output.jpg" width="100%" height="100%" class="object-fit-fill" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false" alt="image"/>
                     <div class="container">
                     <div class="carousel-caption text-end">
                         <h1>One more for good measure.</h1>
                         <p>Some representative placeholder content for the third slide of this carousel.</p>
-                        <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
+                        <p><a class="btn btn-lg btn-primary" href="#">Test</a></p>
                     </div>
                     </div>
                 </div>
