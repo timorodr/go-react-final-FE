@@ -28,7 +28,7 @@ const Dashboard = () => {
                     </div>
                 </div>
                 <div class="carousel-item">
-                <img src="https://api.deepai.org/job-view-file/245217cc-f7e6-4743-911e-f062af81aebb/outputs/output.jpg" width="100%" height="100%" class="object-fit-fill" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false" alt="image"/>
+                <img src="https://www.reanfoundation.org/wp-content/uploads/2023/06/Medication-Management.jpg" width="100%" height="100%" class="object-fit-fill" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false" alt="image"/>
                     <div class="container">
                     <div class="carousel-caption">
                         <h1>Another example headline.</h1>

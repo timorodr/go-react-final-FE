@@ -9,6 +9,7 @@ import {
   import Login from "./pages/Login";
   import './App.css';
 import Entries from "./components/allMedEntries";
+import OpenAIDrugInteraction from "./pages/OpenAIDrugInteraction";
 
   
 //   import { cardLoader, deckLoader } from "./loaders";
@@ -21,6 +22,7 @@ import Entries from "./components/allMedEntries";
         <Route path="/signup" element={<Register/>}/>
         <Route path="/login" element={<Login/>}/>
         <Route path="/entry/create" element={<Entries/>}/>
+        <Route path="/druginteraction" element={<OpenAIDrugInteraction/>}/>
         {/* <Route index element={<Landing />} loader={deckLoader} />
         <Route path="deck/:id" element={<Deckshow />} loader={cardLoader} />
         <Route
