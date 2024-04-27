@@ -2,6 +2,7 @@ import React, {useState, useEffect} from "react";
 import axios from "axios"
 import {Button, Form, Container, Modal} from 'react-bootstrap'
 import Entry from './singleEntry'
+import AuthedNav from "./authedNav";
 
 
 const Entries = () => {
@@ -30,6 +31,7 @@ const Entries = () => {
     console.log(entries)
     return(
         <div>
+            <AuthedNav/>
             <Container>
                 <Button onClick={() => setAddNewEntry(true)}>Add A Medication</Button>
             </Container>

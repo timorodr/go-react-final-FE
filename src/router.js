@@ -10,6 +10,8 @@ import {
   import './App.css';
 import Entries from "./components/allMedEntries";
 import OpenAIDrugInteraction from "./pages/OpenAIDrugInteraction";
+import { loginAction, signupAction } from "./actions";
+import Landing from "./pages/Landing";
 
   
 //   import { cardLoader, deckLoader } from "./loaders";
@@ -19,8 +21,9 @@ import OpenAIDrugInteraction from "./pages/OpenAIDrugInteraction";
     createRoutesFromElements(
       <Route path="/" element={<App />}>
         <Route path="/dashboard" element={<Dashboard/>}/>
-        <Route path="/signup" element={<Register/>}/>
-        <Route path="/login" element={<Login/>}/>
+        <Route path="/signup" element={<Register/>} action={signupAction}/>
+        <Route path="/login" element={<Login/>} action={loginAction}/>
+        <Route path="/landing" element={<Landing/>}/>
         <Route path="/entry/create" element={<Entries/>}/>
         <Route path="/druginteraction" element={<OpenAIDrugInteraction/>}/>
         {/* <Route index element={<Landing />} loader={deckLoader} />

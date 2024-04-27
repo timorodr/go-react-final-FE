@@ -1,5 +1,7 @@
 import React from 'react'
 import { useState } from 'react'
+import Card from 'react-bootstrap/Card';
+import AuthedNav from '../components/authedNav';
 
 
 // const API_KEY = "sk-proj-PNBWS0LnobxJhDsLc1U4T3BlbkFJHg9qAlXukiuiUninlSQ9" // send to env
@@ -39,18 +41,31 @@ const OpenAIDrugInteraction = () => {
 
     return (
         <div>
-            <textarea
-            onChange={(e) => setDrug(e.target.value)}
-            placeholder='list medications here'
-            cols={50}
-            rows={10}
-            />
+            <AuthedNav/>
+            <div style={{position: 'sticky', paddingTop: 50}}>
+                <textarea
+                onChange={(e) => setDrug(e.target.value)}
+                placeholder='list medications here'
+                cols={50}
+                rows={10}
+                />
+            </div>
             <div>
                 <button onClick={callOpenAIAPI}>Check potential interactions</button>
                 {setAiAnswer !== "" ?
-                <h3>{aiAnswer}</h3>
+                <div style={{paddingTop: '5%'}}>
+                    <Card border="primary" style={{ width: '90%', margin: 'auto'}}>
+                        <Card.Header>Drug Interactions</Card.Header>
+                        <Card.Body>
+                        <Card.Title>Primary Card Title</Card.Title>
+                        <Card.Text>
+                            <h3>{aiAnswer}</h3>
+                        </Card.Text>
+                        </Card.Body>
+                    </Card>
+                </div>
                 : null}
-            </div>
+                </div>
         </div>
     )
 }
