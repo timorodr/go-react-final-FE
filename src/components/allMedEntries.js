@@ -63,19 +63,6 @@ const Entries = () => {
                 </Modal.Body>
             </Modal>
 
-            {/* <Modal show={changeIngredient.change} onHide={() => setChangeIngredient({"change": false, "id": 0})} centered>
-                <Modal.Header closeButton>
-                    <Modal.Title>Change Ingredients</Modal.Title>
-                </Modal.Header>
-                <Modal.Body>
-                    <Form.Group>
-                        <Form.Label>New Ingredients</Form.Label>
-                        <Form.Control onChange={(event) => {setNewIngredientName(event.target.value)}}></Form.Control>
-                    </Form.Group>
-                    <Button onClick={() => changeIngredientForEntry()}>Change</Button>
-                    <Button onClick={() => setChangeIngredient({"change": false, "id": 0})}>Cancel</Button>
-                </Modal.Body>
-            </Modal> */}
 
             <Modal show={changeEntry.change} onHide={() => setChangeEntry({"change": false, "id": 0})} centered>
                 <Modal.Header closeButton>
@@ -99,22 +86,10 @@ const Entries = () => {
         </div>
     )
 
-    // function changeIngredientForEntry(){
-    //     changeIngredient.change = false
-    //     let URL = "http://localhost:8000/ingredient/update/" + changeIngredient.id
-    //     axios.put(URL, {
-    //         "ingredients": newIngredientName
-    //     }).then(response => {
-    //         console.log(response.status)
-    //         if(response.status === 200){
-    //             setRefreshData(true)
-    //         }
-    //     })
-    // }
 
     function changeSingleEntry(){
         changeEntry.change = false
-        let URL = "http://localhost:8000/entry/update/" + changeEntry.id
+        let URL = "http://localhost:8000/user/entry/update/" + changeEntry.id
         axios.put(URL, {
             "name": newEntry.name,
             "dosage": newEntry.dosage,
@@ -132,12 +107,27 @@ const Entries = () => {
 
     function addSingleEntry(){
         setAddNewEntry(false)
-        let URL = "http://localhost:8000/entry/create"
+        let URL = "http://localhost:8000/user/entry/create"
+
+        // const token = localStorage.getItem('token')
+
+        // if(!token){
+        //     console.log("Missing auth token brother!")
+        //     return
+        // }
+
+        // const headers = {
+        //     'Content-Type': 'application/json',
+        //     Authorization: `Bearer ${token}`
+        // }
+
+
         axios.post(URL, {
             "name": newEntry.name,
             "dosage": newEntry.dosage,
             "description": newEntry.description
-        }).then(response => {
+        })
+        .then(response => {
             if(response.status === 200){
                 setRefreshData(true)
             }
@@ -145,7 +135,7 @@ const Entries = () => {
     }
 
     function deleteSingleEntry(id){
-        let URL = "http://localhost:8000/entry/delete/" + id
+        let URL = "http://localhost:8000/user/entry/delete/" + id
         axios.delete(URL, {
 
         }).then(response => {
@@ -156,10 +146,26 @@ const Entries = () => {
     }
 
     function getAllEntries(){
-        let URL = "http://localhost:8000/entries"
+        let URL = "http://localhost:8000/user/entries"
+
+        // const token = localStorage.getItem('token')
+
+        // if(!token){
+        //     console.log("Missing auth token brother!")
+        //     return
+        // }
+
+        // const headers = {
+        //     Authorization: `Bearer ${token}`
+        // }
+
         axios.get(URL, {
+            // headers: {
+            //     Authorization: `Bearer ${token}`
+            // } 
             responseType: 'json'
-        }).then(response => {
+        })
+        .then(response => {
             if(response.status === 200){
                 setEntries(response.data)
             }

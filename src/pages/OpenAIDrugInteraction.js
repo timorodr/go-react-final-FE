@@ -5,7 +5,8 @@ import AuthedNav from '../components/authedNav';
 
 
 // const API_KEY = "sk-proj-PNBWS0LnobxJhDsLc1U4T3BlbkFJHg9qAlXukiuiUninlSQ9" // send to env
-const API_KEY = "sk-proj-FpR8u2mrBTwUknkLvJgDT3BlbkFJ0BfXrbiNcv15bHywoC9M" // send to env
+// const API_KEY = "sk-proj-FpR8u2mrBTwUknkLvJgDT3BlbkFJ0BfXrbiNcv15bHywoC9M" // send to env
+const ApiKey = process.env.REACT_APP_API_KEY
 
 const OpenAIDrugInteraction = () => {
 
@@ -26,7 +27,7 @@ const OpenAIDrugInteraction = () => {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
-                "Authorization": "Bearer " + API_KEY
+                "Authorization": "Bearer " + ApiKey
             },
             body: JSON.stringify(APIBody)
         }).then((data) => { // data request to json
