@@ -89,7 +89,7 @@ const Entries = () => {
 
     function changeSingleEntry(){
         changeEntry.change = false
-        let URL = "http://localhost:8000/user/entry/update/" + changeEntry.id
+        let URL = "https://go-react-final-be.onrender.com/user/entry/update/" + changeEntry.id
         axios.put(URL, {
             "name": newEntry.name,
             "dosage": newEntry.dosage,
@@ -107,7 +107,7 @@ const Entries = () => {
 
     function addSingleEntry(){
         setAddNewEntry(false)
-        let URL = "http://localhost:8000/user/entry/create"
+        let URL = "https://go-react-final-be.onrender.com/user/entry/create"
 
         // const token = localStorage.getItem('token')
 
@@ -135,7 +135,7 @@ const Entries = () => {
     }
 
     function deleteSingleEntry(id){
-        let URL = "http://localhost:8000/user/entry/delete/" + id
+        let URL = "https://go-react-final-be.onrender.com/user/entry/delete/" + id
         axios.delete(URL, {
 
         }).then(response => {
@@ -146,7 +146,7 @@ const Entries = () => {
     }
 
     function getAllEntries(){
-        let URL = "http://localhost:8000/user/entries"
+        let URL = "https://go-react-final-be.onrender.com/user/entries"
 
         // const token = localStorage.getItem('token')
 
