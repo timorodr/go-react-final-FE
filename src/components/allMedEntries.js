@@ -36,7 +36,7 @@ const Entries = () => {
             </Container>
             <Container>
             {entries != null && entries.map((entry, i) => (
-                <Entry entryData={entry} deleteSingleEntry={deleteSingleEntry} setChangeIngredient={setChangeIngredient} setChangeEntry={setChangeEntry}/>
+                <Entry entryData={entry} deleteSingleEntry={deleteSingleEntry} setChangeEntry={setChangeEntry}/>
                 ))}
             </Container>
 
