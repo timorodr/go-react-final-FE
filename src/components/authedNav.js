@@ -5,7 +5,7 @@ const AuthedNav = () => {
         <div>
             <nav className="navbar navbar-expand-md navbar-dark bg-dark">
             <div className="container-fluid">
-                <a className="navbar-brand" href="https://hilarious-biscotti-0d1872.netlify.app/landing" style={{fontWeight: 600, fontSize: 28}}>MediManage</a>
+                <a className="navbar-brand" href="/landing" style={{fontWeight: 600, fontSize: 28}}>MediManage</a>
 
                 {/* <ul className="navbar-nav me-auto mb-2 mb-md-0">
                     <li className="nav-item">
