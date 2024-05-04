@@ -4,20 +4,6 @@ import React from 'react'
 const Nav = () => {
 
 
-    // const navigate = useNavigate()
-
-
-    // const home = () => {
-    //     navigate(`/`); // Navigate away when done
-    // };
-
-    // const login = () => {
-    //     navigate(`/login`); // Navigate away when done
-    // };
-    // const signup = () => {
-    //     navigate(`/signup`); // Navigate away when done
-    // };
-
     return (
         <div>
             <nav className="navbar navbar-expand-md navbar-dark bg-dark">
