@@ -10,6 +10,8 @@ const Register = () => {
     const [password, setPassword] = useState('')
     const [phone, setPhone] = useState('')
 
+    
+
     // const submit = async (e) => {
     //     e.preventDefault()
 

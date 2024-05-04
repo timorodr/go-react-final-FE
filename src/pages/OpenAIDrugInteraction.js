@@ -2,7 +2,7 @@ import React from 'react'
 import { useState } from 'react'
 import Card from 'react-bootstrap/Card';
 import AuthedNav from '../components/authedNav';
-
+import {Button} from 'react-bootstrap'
 
 
 const ApiKey = process.env.REACT_APP_API_KEY
@@ -51,13 +51,13 @@ const OpenAIDrugInteraction = () => {
                 />
             </div>
             <div>
-                <button onClick={callOpenAIAPI}>Check potential interactions</button>
-                {setAiAnswer !== "" ?
+                <Button onClick={callOpenAIAPI}>Check potential interactions</Button>
+                {aiAnswer !== "" ?
                 <div style={{paddingTop: '5%'}}>
-                    <Card border="primary" style={{ width: '90%', margin: 'auto'}}>
+                    <Card style={{ width: '90%', margin: 'auto', boxShadow: '0px 7px 9px rgba(0, 0, 0, 0.2)'}}>
                         <Card.Header>Drug Interactions</Card.Header>
                         <Card.Body>
-                        <Card.Title>Primary Card Title</Card.Title>
+                        {/* <Card.Title>...Awaiting input</Card.Title> */}
                         <Card.Text>
                             <h3>{aiAnswer}</h3>
                         </Card.Text>

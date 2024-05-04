@@ -17,33 +17,33 @@ const Dashboard = () => {
                 </div>
                 <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="https://api.deepai.org/job-view-file/3050145d-2bec-4481-ac62-9403e7e82950/outputs/output.jpg" width="100%" height="100%" class="object-fit-fill" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false" alt="image"/>
+                    <img src="https://keystone.health/images/resources/nurse-showing-elderly-man-brochure.jpg" width="100%" height="100%" class="object-fit-fill" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false" alt="image"/>
                     {/* <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" /></svg> */}
                     <div class="container">
                     <div class="carousel-caption text-start">
-                        <h1>Example headline.</h1>
-                        <p class="opacity-75">Some representative placeholder content for the first slide of the carousel.</p>
-                        <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p>
+                        <h1>Simplify Your Medication Journey:</h1>
+                        <p class="opacity-75">Organize, Track, and Stay Informed</p>
+                        <p><a class="btn btn-lg btn-primary" href="/signup">Sign up today</a></p>
                     </div>
                     </div>
                 </div>
                 <div class="carousel-item">
-                <img src="https://www.reanfoundation.org/wp-content/uploads/2023/06/Medication-Management.jpg" width="100%" height="100%" class="object-fit-fill" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false" alt="image"/>
+                <img src="https://wellness360magazine.com/wp-content/uploads/2019/01/pexels-anna-shvets-3683074-scaled.jpg" width="100%" height="100%" class="object-fit-fill" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false" alt="image"/>
                     <div class="container">
                     <div class="carousel-caption">
-                        <h1>change these.</h1>
-                        <p>Some representative placeholder content for the second slide of the carousel.</p>
-                        <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
+                        <h1 style={{textAlign: "left"}}>Empower You:</h1>
+                        <p style={{textAlign: "left"}}>Manage Medications with Ease.</p>
+                        <p><a class="btn btn-lg btn-primary" href="#dashboard-medmanage">Learn more</a></p>
                     </div>
                     </div>
                 </div>
                 <div class="carousel-item">
-                <img src="https://api.deepai.org/job-view-file/85233656-d7e4-4a8a-ab6c-4817f7448b17/outputs/output.jpg" width="100%" height="100%" class="object-fit-fill" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false" alt="image"/>
+                <img src="https://t3.ftcdn.net/jpg/01/87/74/16/360_F_187741612_ls8rZmrgj8q7Bbd6Mz9kOV64Nqn4T8Q4.jpg" width="100%" height="100%" class="object-fit-fill" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false" alt="image"/>
                     <div class="container">
                     <div class="carousel-caption text-end">
-                        <h1>One more for good measure.</h1>
-                        <p>Some representative placeholder content for the third slide of this carousel.</p>
-                        <p><a class="btn btn-lg btn-primary" href="#">Test</a></p>
+                        <h1>Drug Interaction Checks:</h1>
+                        <p>Stay Safe and Avoid Unintended Side Effects.</p>
+                        <p><a class="btn btn-lg btn-primary" href="#dashboard-drug-interactions">Learn More</a></p>
                     </div>
                     </div>
                 </div>
@@ -63,22 +63,25 @@ const Dashboard = () => {
 
                 <div class="row">
                 <div class="col-lg-4">
-                    <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg>
+                <img src="https://vspnow.com/images/improved-health.png" class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img"></img>
+                    {/* <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg> */}
                     <h2 class="fw-normal">Heading</h2>
-                    <p>Some representative placeholder content for the three columns of text below the carousel. This is the first column.</p>
-                    <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+                    <p>Adhering to a medication regimen as prescribed by a healthcare provider can lead to better health outcomes. This includes managing chronic conditions effectively, preventing disease progression, and reducing the risk of complications. Consistently taking medications as directed can help control symptoms, stabilize conditions, and improve overall well-being..</p>
+                    {/* <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p> */}
                 </div>
                 <div class="col-lg-4">
-                    <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg>
+                <img src="https://kao-h.assetsadobe3.com/is/image/content/dam/sites/kao/www-kao-com/global/en/sustainability/me/qol/image-01.jpg?fmt=webp&wid=1680" class="bd-placeholder-img rounded-circle" width="200" height="140" xmlns="http://www.w3.org/2000/svg" role="img"></img>
+                    {/* <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg> */}
                     <h2 class="fw-normal">Heading</h2>
-                    <p>Another exciting bit of representative placeholder content. This time, we've moved on to the second column.</p>
-                    <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+                    <p>Effective medication management can alleviate symptoms, improve daily functioning, and enhance overall well-being. By managing medications properly, you can maintain their independence, engage in activities they enjoy, and experience a higher quality of life.</p>
+                    {/* <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p> */}
                 </div>
                 <div class="col-lg-4">
-                    <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/717-money-bag.svg/768px-717-money-bag.svg.png" class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img"></img>
+                    {/* <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg> */}
                     <h2 class="fw-normal">Heading</h2>
-                    <p>And lastly this, the third column of representative placeholder content.</p>
-                    <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+                    <p>Proper medication management can help minimize the need for emergency room visits, hospitalizations, and costly medical procedures by effectively managing chronic conditions and preventing complications. This can lead to significant cost savings for both individuals and healthcare systems.</p>
+                    {/* <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p> */}
                 </div>
                 </div>
 
@@ -88,24 +91,26 @@ const Dashboard = () => {
                 <hr class="featurette-divider"/>
 
                 <div class="row featurette">
-                <div class="col-md-7">
-                    <h2 class="featurette-heading fw-normal lh-1">First featurette heading. <span class="text-body-secondary">It’ll blow your mind.</span></h2>
-                    <p class="lead">Some great placeholder content for the first featurette here. Imagine some exciting prose here.</p>
+                <div class="col-md-7" id="dashboard-medmanage">
+                    <h2 class="featurette-heading fw-normal lh-1">Complete Medication Management. <span class="text-body-secondary">Give yourself one less worry:</span></h2>
+                    <p class="lead">Stay organized and safe with ease.</p>
                 </div>
                 <div class="col-md-5">
-                    <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-bg)"/><text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em">500x500</text></svg>
+                    <img src="https://i.imgur.com/GyZ16x4.png" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img"></img>
+                    {/* <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-bg)"/><text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em">500x500</text></svg> */}
                 </div>
                 </div>
 
                 <hr class="featurette-divider"/>
 
                 <div class="row featurette">
-                <div class="col-md-7 order-md-2">
-                    <h2 class="featurette-heading fw-normal lh-1">Oh yeah, it’s that good. <span class="text-body-secondary">See for yourself.</span></h2>
-                    <p class="lead">Another featurette? Of course. More placeholder content here to give you an idea of how this layout would work with some actual real-world content in place.</p>
+                <div class="col-md-7 order-md-2" id="dashboard-drug-interactions">
+                    <h2 class="featurette-heading fw-normal lh-1">Peace of Mind with Drug Interaction Checks: <span class="text-body-secondary">See for yourself.</span></h2>
+                    <p class="lead">Know Your Medications are Safe with the power of AI Technology.</p>
                 </div>
                 <div class="col-md-5 order-md-1">
-                    <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-bg)"/><text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em">500x500</text></svg>
+                    {/* <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-bg)"/><text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em">500x500</text></svg> */}
+                    <img src="https://i.imgur.com/08EYjsS.png" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img"></img>
                 </div>
                 </div>
 
@@ -113,11 +118,12 @@ const Dashboard = () => {
 
                 <div class="row featurette">
                 <div class="col-md-7">
-                    <h2 class="featurette-heading fw-normal lh-1">And lastly, this one. <span class="text-body-secondary">Checkmate.</span></h2>
-                    <p class="lead">And yes, this is the last block of representative placeholder content. Again, not really intended to be actually read, simply here to give you a better view of what this would look like with some actual content. Your content.</p>
+                    <h2 class="featurette-heading fw-normal lh-1">Coming Soon: <span class="text-body-secondary">Appointment Calendar.</span></h2>
+                    <p class="lead">No more worrying about missed doctors visits or medication refills. Stay on top of upcoming appointments with automatic notifications.</p>
                 </div>
                 <div class="col-md-5">
-                    <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-bg)"/><text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em">500x500</text></svg>
+                <img src="https://mellowoodmedical.com/wp-content/uploads/2021/04/9.png" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img"></img>
+                    {/* <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-bg)"/><text x="50%" y="50%" fill="var(--bs-secondary-color)" dy=".3em">500x500</text></svg> */}
                 </div>
                 </div>
 

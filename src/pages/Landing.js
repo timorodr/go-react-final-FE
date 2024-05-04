@@ -21,14 +21,6 @@ const Landing = () => {
     return (
         <div>
             <AuthedNav/>
-            <button onClick={() => {
-                //remove the token
-                localStorage.removeItem('token')
-                // go back to the / route
-                navigate('/')
-            }}>
-                Logout
-            </button>
              <div class="px-4 pt-5 my-5 text-center">
                 <h1 class="display-4 fw-bold text-body-emphasis">Medication Tracking</h1>
                 <div class="col-lg-6 mx-auto">

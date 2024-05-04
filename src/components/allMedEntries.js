@@ -3,6 +3,7 @@ import axios from "axios"
 import {Button, Form, Container, Modal} from 'react-bootstrap'
 import Entry from './singleEntry'
 import AuthedNav from "./authedNav";
+import ColorCheckboxes from "./Checkbox";
 
 
 const Entries = () => {
@@ -10,10 +11,9 @@ const Entries = () => {
     const [entries, setEntries] = useState([])
     const [refreshData, setRefreshData] = useState(false)
     const [changeEntry, setChangeEntry] = useState({"change": false, "id": 0}) // help us change the entire entry
-
     const [addNewEntry, setAddNewEntry] = useState(false) 
-
     const [newEntry, setNewEntry] = useState({"name": "", "dosage": "", "description": ""}) 
+    // const [isChecked, setIsChecked] = useState(false);
 
 
     // INITIAL LOAD UP
