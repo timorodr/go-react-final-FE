@@ -26,10 +26,10 @@ const Nav = () => {
 
                 <ul className="navbar-nav me-auto mb-2 mb-md-0">
                     <li className="nav-item">
-                    <a className="nav-link active" aria-current="page" href="/login">Login</a>
+                    <a className="nav-link active" aria-current="page" href="/login" style={{fontWeight: 600, fontSize: 20}}>Login</a>
                     </li>
                     <li className="nav-item">
-                    <a className="nav-link" href="/signup">Register</a>
+                    <a className="nav-link" href="/signup" style={{fontWeight: 600, fontSize: 20}}>Register</a>
                     </li>
                 </ul>
 
