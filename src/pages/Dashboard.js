@@ -65,21 +65,21 @@ const Dashboard = () => {
                 <div class="col-lg-4">
                 <img src="https://vspnow.com/images/improved-health.png" class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img"></img>
                     {/* <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg> */}
-                    <h2 class="fw-normal">Heading</h2>
+                    <h2 class="fw-normal">Improved Health Outcomes</h2>
                     <p>Adhering to a medication regimen as prescribed by a healthcare provider can lead to better health outcomes. This includes managing chronic conditions effectively, preventing disease progression, and reducing the risk of complications. Consistently taking medications as directed can help control symptoms, stabilize conditions, and improve overall well-being..</p>
                     {/* <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p> */}
                 </div>
                 <div class="col-lg-4">
                 <img src="https://kao-h.assetsadobe3.com/is/image/content/dam/sites/kao/www-kao-com/global/en/sustainability/me/qol/image-01.jpg?fmt=webp&wid=1680" class="bd-placeholder-img rounded-circle" width="200" height="140" xmlns="http://www.w3.org/2000/svg" role="img"></img>
                     {/* <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg> */}
-                    <h2 class="fw-normal">Heading</h2>
+                    <h2 class="fw-normal">Better Quality of Life</h2>
                     <p>Effective medication management can alleviate symptoms, improve daily functioning, and enhance overall well-being. By managing medications properly, you can maintain their independence, engage in activities they enjoy, and experience a higher quality of life.</p>
                     {/* <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p> */}
                 </div>
                 <div class="col-lg-4">
                     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/717-money-bag.svg/768px-717-money-bag.svg.png" class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img"></img>
                     {/* <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="var(--bs-secondary-color)"/></svg> */}
-                    <h2 class="fw-normal">Heading</h2>
+                    <h2 class="fw-normal">Money Saver</h2>
                     <p>Proper medication management can help minimize the need for emergency room visits, hospitalizations, and costly medical procedures by effectively managing chronic conditions and preventing complications. This can lead to significant cost savings for both individuals and healthcare systems.</p>
                     {/* <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p> */}
                 </div>
