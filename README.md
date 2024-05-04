@@ -7,7 +7,7 @@
 | Description | A medication management application for improved health, reduced side effects, fewer medication errors, and increased sense of control over health. |
 | Developers | Timothy Rodriguez |
 | Live Website | https://main--hilarious-biscotti-0d1872.netlify.app |
-| Repo | [https://github.com/timorodr/capstone-fe ](https://github.com/timorodr/go-react-final-FE)|
+| Repo | https://github.com/timorodr/go-react-final-FE|
 | Techologies | React |
 
 ## Problem Being Solved and Target Market
