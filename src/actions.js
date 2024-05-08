@@ -40,8 +40,8 @@ export const loginAction = async ({request}) => {
     //build out the object that we will sending to /login
     const newUser = {
         email: formData.get('email'),
-        password: formData.get('password'),
-        phone: formData.get('phone')
+        password: formData.get('password')
+        // phone: formData.get('phone')
     }
 
     //make the request to login

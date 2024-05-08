@@ -8,6 +8,7 @@ import ColorCheckboxes from "./Checkbox";
 
 const Entries = () => {
 
+    const [userID, setUserID] = useState('');
     const [entries, setEntries] = useState([])
     const [refreshData, setRefreshData] = useState(false)
     const [changeEntry, setChangeEntry] = useState({"change": false, "id": 0}) // help us change the entire entry
@@ -86,91 +87,174 @@ const Entries = () => {
     )
 
 
-    function changeSingleEntry(){
-        changeEntry.change = false
-        let URL = "https://go-react-final-be.onrender.com/user/entry/update/" + changeEntry.id
-        axios.put(URL, {
-            "name": newEntry.name,
-            "dosage": newEntry.dosage,
-            "description": newEntry.description
-        })
-        .then(response => {
-            if(response.status === 200){
-                setRefreshData(true)
-            }
-        })
-    }
+    // function changeSingleEntry(){
+    //     changeEntry.change = false
+    //     let URL = "http://localhost:8000/user/entry/update/" + changeEntry.id
+    //     axios.put(URL, {
+    //         "name": newEntry.name,
+    //         "dosage": newEntry.dosage,
+    //         "description": newEntry.description
+    //     })
+    //     .then(response => {
+    //         if(response.status === 200){
+    //             setRefreshData(true)
+    //         }
+    //     })
+    // }
 
 
 // call api's
 
-    function addSingleEntry(){
-        setAddNewEntry(false)
-        let URL = "https://go-react-final-be.onrender.com/user/entry/create"
+//     function addSingleEntry(){
+//         setAddNewEntry(false)
+//         // const id = params.id
+//         let URL = `http://localhost:8000/user/entry/create`
 
-        // const token = localStorage.getItem('token')
+//         const token = localStorage.getItem('token')
 
-        // if(!token){
-        //     console.log("Missing auth token brother!")
-        //     return
-        // }
+//         if(!token){
+//             console.log("Missing auth token brother!")
+//             return
+//         }
 
-        // const headers = {
-        //     'Content-Type': 'application/json',
-        //     Authorization: `Bearer ${token}`
-        // }
+//         const headers = {
+//             'Content-Type': 'application/json',
+//             Authorization: `Bearer ${token}`
+//         }
 
 
+//         axios.post(URL, {
+//             "name": newEntry.name,
+//             "dosage": newEntry.dosage,
+//             "description": newEntry.description
+//         }, {headers})
+//         .then(response => {
+//             if(response.status === 200){
+//                 setRefreshData(true)
+//             }
+//         })
+//     }
+
+//     function deleteSingleEntry(id){
+//         let URL = "http://localhost:8000/user/entry/delete/" + id
+//         axios.delete(URL, {
+
+//         }).then(response => {
+//             if(response.status === 200){
+//                 setRefreshData(true)
+//             }
+//         })
+//     }
+
+//     function getAllEntries(){
+//         let URL = "http://localhost:8000/user/entries"
+
+//         const token = localStorage.getItem('token')
+
+//         if(!token){
+//             console.log("Missing auth token brother!")
+//             return
+//         }
+
+//         // const headers = {
+//         //     Authorization: `Bearer ${token}`
+//         // }
+
+//         axios.get(URL, {
+//             headers: {
+//                 Authorization: `Bearer ${token}`
+//             },
+//             responseType: 'json'
+//         })
+//         .then(response => {
+//             if(response.status === 200){
+//                 setEntries(response.data)
+//             }
+//         })
+//     }
+
+// }
+
+    function changeSingleEntry(changeEntry, newEntry) {
+        changeEntry.change = false;
+        const URL = `http://localhost:8000/user/entry/update/${changeEntry.id}`;
+        axios.put(URL, {
+            name: newEntry.name,
+            dosage: newEntry.dosage,
+            description: newEntry.description
+        })
+        .then(response => {
+            if (response.status === 200) {
+                setRefreshData(true);
+            }
+        })
+        .catch(error => {
+            console.error("Error updating entry:", error);
+        });
+    }
+
+    function addSingleEntry() {
+        setAddNewEntry(false);
+        const URL = `http://localhost:8000/user/${userID}entry/create`;
+        const token = localStorage.getItem('token');
+        if (!token) {
+            console.log("Missing auth token!");
+            return;
+        }
+        const headers = {
+            'Content-Type': 'application/json',
+            Authorization: `Bearer ${token}`
+        };
         axios.post(URL, {
-            "name": newEntry.name,
-            "dosage": newEntry.dosage,
-            "description": newEntry.description
-        })
+            name: newEntry.name,
+            dosage: newEntry.dosage,
+            description: newEntry.description
+        }, { headers })
         .then(response => {
-            if(response.status === 200){
-                setRefreshData(true)
+            if (response.status === 200) {
+                setRefreshData(true);
             }
         })
+        .catch(error => {
+            console.error("Error adding entry:", error);
+        });
     }
 
-    function deleteSingleEntry(id){
-        let URL = "https://go-react-final-be.onrender.com/user/entry/delete/" + id
-        axios.delete(URL, {
-
-        }).then(response => {
-            if(response.status === 200){
-                setRefreshData(true)
+    function deleteSingleEntry(id) {
+        const URL = `http://localhost:8000/user/entry/delete/${id}`;
+        axios.delete(URL)
+        .then(response => {
+            if (response.status === 200) {
+                setRefreshData(true);
             }
         })
+        .catch(error => {
+            console.error("Error deleting entry:", error);
+        });
     }
 
-    function getAllEntries(){
-        let URL = "https://go-react-final-be.onrender.com/user/entries"
-
-        // const token = localStorage.getItem('token')
-
-        // if(!token){
-        //     console.log("Missing auth token brother!")
-        //     return
-        // }
-
-        // const headers = {
-        //     Authorization: `Bearer ${token}`
-        // }
-
+    function getAllEntries() {
+        // const userID = params.id
+        const URL = `http://localhost:8000/user/${userID}entries`;
+        const token = localStorage.getItem('token');
+        if (!token) {
+            console.log("Missing auth token!");
+            return;
+        }
         axios.get(URL, {
-            // headers: {
-            //     Authorization: `Bearer ${token}`
-            // } 
-            responseType: 'json'
-        })
-        .then(response => {
-            if(response.status === 200){
-                setEntries(response.data)
+            headers: {
+                Authorization: `Bearer ${token}`
             }
         })
+        .then(response => {
+            if (response.status === 200) {
+                setEntries(response.data);
+            }
+        })
+        .catch(error => {
+            console.error("Error getting entries:", error);
+        });
     }
-
 }
 
 export default Entries

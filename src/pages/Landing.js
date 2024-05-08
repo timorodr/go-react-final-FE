@@ -8,9 +8,8 @@ const Landing = () => {
 
     const navigate = useNavigate()
 
-
     const medList = () => {
-        navigate(`/user/entry/create`); // Navigate away when done
+        navigate(`/user/:id/entry/create`); // Navigate away when done
     };
 
     const drugInteractionPage = () => {

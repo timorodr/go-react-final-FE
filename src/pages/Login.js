@@ -10,11 +10,11 @@ const Login = () => {
     const [password, setPassword] = useState('')
 
 
-    const navigate = useNavigate()
+    // const navigate = useNavigate()
 
-    const landingPage = () => {
-        navigate(`/landing`); // Navigate away when done
-    };
+    // const landingPage = () => {
+    //     navigate(`/landing`); // Navigate away when done
+    // };
     // const submit = async (e) => {
     //     e.preventDefault()
 
@@ -60,7 +60,7 @@ const Login = () => {
                     Remember me
                 </label>
                 </div>
-                <button className="btn btn-primary w-100 py-2" type="submit" onClick={landingPage}>Sign in</button>
+                <button className="btn btn-primary w-100 py-2" type="submit">Sign in</button>
                 <p className="mt-5 mb-3 text-body-secondary">&copy; 2024</p>
             </Form>
             </main>
