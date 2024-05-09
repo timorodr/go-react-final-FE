@@ -1,15 +1,18 @@
 import React from "react"
 import "../App.css"
 import { useNavigate } from "react-router-dom";
-
+import { useParams } from "react-router-dom";
 import AuthedNav from "../components/authedNav";
 
 const Landing = () => {
 
+    const {id} = useParams()
+
+
     const navigate = useNavigate()
 
     const medList = () => {
-        navigate(`/user/:id/entry/create`); // Navigate away when done
+        navigate(`/user/entry/create/${id}`); // Navigate away when done
     };
 
     const drugInteractionPage = () => {

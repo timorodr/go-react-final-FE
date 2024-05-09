@@ -4,17 +4,23 @@ import {Button, Form, Container, Modal} from 'react-bootstrap'
 import Entry from './singleEntry'
 import AuthedNav from "./authedNav";
 import ColorCheckboxes from "./Checkbox";
+import { useParams, useSearchParams } from "react-router-dom";
+
 
 
 const Entries = () => {
-
-    const [userID, setUserID] = useState('');
+    
+    const id = useParams()
+    
+    console.log(id)
     const [entries, setEntries] = useState([])
     const [refreshData, setRefreshData] = useState(false)
     const [changeEntry, setChangeEntry] = useState({"change": false, "id": 0}) // help us change the entire entry
     const [addNewEntry, setAddNewEntry] = useState(false) 
     const [newEntry, setNewEntry] = useState({"name": "", "dosage": "", "description": ""}) 
     // const [isChecked, setIsChecked] = useState(false);
+    const [searchParams] = useSearchParams()
+    console.log(searchParams.entries())
 
 
     // INITIAL LOAD UP
@@ -175,7 +181,7 @@ const Entries = () => {
 
 // }
 
-    function changeSingleEntry(changeEntry, newEntry) {
+    function changeSingleEntry() {
         changeEntry.change = false;
         const URL = `http://localhost:8000/user/entry/update/${changeEntry.id}`;
         axios.put(URL, {
@@ -194,8 +200,9 @@ const Entries = () => {
     }
 
     function addSingleEntry() {
+
         setAddNewEntry(false);
-        const URL = `http://localhost:8000/user/${userID}entry/create`;
+        const URL = `http://localhost:8000/user/entry/create/${id}`;
         const token = localStorage.getItem('token');
         if (!token) {
             console.log("Missing auth token!");
@@ -234,8 +241,8 @@ const Entries = () => {
     }
 
     function getAllEntries() {
-        // const userID = params.id
-        const URL = `http://localhost:8000/user/${userID}entries`;
+
+        const URL = `http://localhost:8000/user/entries/${id}`;
         const token = localStorage.getItem('token');
         if (!token) {
             console.log("Missing auth token!");
