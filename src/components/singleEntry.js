@@ -7,16 +7,16 @@ import { FaEdit } from "react-icons/fa";
 import { MdDeleteForever } from "react-icons/md";
 
 const Entry = ({entryData, deleteSingleEntry, setChangeEntry}) => {
+    console.log(entryData.medication_id)
     return (
         <div className="med-entry">
             <Card style={{boxShadow: '0px 7px 9px rgba(0, 0, 0, 0.2)'}}>
                 <Card.Header className="card-header" style={{display: "flex", justifyContent: "center", alignItems: "center", fontSize: 30}}>{entryData !== undefined && entryData.name}
                     <Button style={{marginLeft: 10}} size="sm" onClick={() => changeEntry()}><FaEdit /></Button>
-                    <Button style={{backgroundColor: "red", marginLeft: 10, borderColor: "red"}} type="button" class="btn btn-danger" className="delete-entry" size="sm" onClick={() => deleteSingleEntry(entryData._id)}><MdDeleteForever /></Button>
+                    <Button style={{backgroundColor: "red", marginLeft: 10, borderColor: "red"}} type="button" class="btn btn-danger" className="delete-entry" size="sm" onClick={() => deleteSingleEntry(entryData.medication_id)}><MdDeleteForever /></Button>
                 </Card.Header>
-                {/* <Card.Body style={{height: 100}}>Medication Name</Card.Body> */}
+
                 <Row style={{fontSize: 18, height: 150}}>
-                    {/* <Col><b style={{fontSize: 20}}>Name:</b><Col>{entryData !== undefined && entryData.name}</Col></Col> */}
                     <Col><b style={{fontSize: 20}}>Dosage:</b><Col>{entryData !== undefined && entryData.dosage}</Col></Col>
                     <Col><b style={{fontSize: 20}}>Description:</b><Col>{entryData !== undefined && entryData.description}</Col></Col>
                     <Col style={{fontSize: 20}}><ColorCheckboxes/></Col>
@@ -25,21 +25,12 @@ const Entry = ({entryData, deleteSingleEntry, setChangeEntry}) => {
         </div>
     )
 
-    // function changeIngredient(){
-    //     setChangeIngredient(
-    //         {
-    //             "change": true,
-    //             "id": entryData._id
-    //         }
-    //     )
-    // }
 
     function changeEntry(){
         setChangeEntry(
             {
                 "change": true,
-                "id": entryData._id
-            }
+                "id": entryData.medication_id            }
         )
     }
 }

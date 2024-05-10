@@ -13,8 +13,7 @@ import OpenAIDrugInteraction from "./pages/OpenAIDrugInteraction";
 import { loginAction, signupAction } from "./actions";
 import Landing from "./pages/Landing";
 
-  
-//   import { cardLoader, deckLoader } from "./loaders";
+
  
   
   const router = createBrowserRouter(
@@ -24,7 +23,7 @@ import Landing from "./pages/Landing";
         <Route path="/signup" element={<Register/>} action={signupAction}/>
         <Route path="/login" element={<Login/>} action={loginAction}/>
         <Route path="/landing" element={<Landing/>}/>
-        <Route path="/user/entry/create" element={<Entries/>}/>
+        <Route path="/user/entry/create/:id" element={<Entries/>}/>
         <Route path="/druginteraction" element={<OpenAIDrugInteraction/>}/>
       </Route>
     )

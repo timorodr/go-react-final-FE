@@ -23,7 +23,6 @@ export const signupAction = async ({request}) => {
     })
     
     //after the request is made, the actions are below
-    //if there is some error, handle it:
     if(response.status >= 400){
         alert(response.statusText)
         return redirect('/signup')
@@ -40,8 +39,8 @@ export const loginAction = async ({request}) => {
     //build out the object that we will sending to /login
     const newUser = {
         email: formData.get('email'),
-        password: formData.get('password'),
-        phone: formData.get('phone')
+        password: formData.get('password')
+        // phone: formData.get('phone')
     }
 
     //make the request to login
@@ -54,7 +53,6 @@ export const loginAction = async ({request}) => {
     })
     
     //after the request is made, the actions are below
-    //if there is some error, handle it:
     if(response.status >= 400){
         alert(response.statusText)
         return redirect('/signup')
@@ -63,6 +61,7 @@ export const loginAction = async ({request}) => {
     const data =  await response.json();
     console.log(data)
     localStorage.setItem('token', data.token)
+    localStorage.setItem('user_id', data._id)
 
     //if successful
     //redirect the user to /login

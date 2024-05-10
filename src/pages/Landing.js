@@ -1,16 +1,20 @@
 import React from "react"
 import "../App.css"
 import { useNavigate } from "react-router-dom";
-
+import { useParams } from "react-router-dom";
 import AuthedNav from "../components/authedNav";
 
 const Landing = () => {
 
+    const {id} = useParams()
+    console.log(id)
+    const userID = localStorage.getItem('user_id');
+
+
     const navigate = useNavigate()
 
-
     const medList = () => {
-        navigate(`/user/entry/create`); // Navigate away when done
+        navigate(`/user/entry/create/${userID}`); // Navigate away when done
     };
 
     const drugInteractionPage = () => {
