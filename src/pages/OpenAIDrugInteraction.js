@@ -57,7 +57,6 @@ const OpenAIDrugInteraction = () => {
                     <Card style={{ width: '90%', margin: 'auto', boxShadow: '0px 7px 9px rgba(0, 0, 0, 0.2)'}}>
                         <Card.Header>Drug Interactions</Card.Header>
                         <Card.Body>
-                        {/* <Card.Title>...Awaiting input</Card.Title> */}
                         <Card.Text>
                             <h3>{aiAnswer}</h3>
                         </Card.Text>

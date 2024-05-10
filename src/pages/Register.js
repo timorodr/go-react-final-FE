@@ -4,34 +4,6 @@ import { Form } from "react-router-dom"
 
 const Register = () => {
 
-    const [first_name, setFirstName] = useState('')
-    const [last_name, setLastName] = useState('')
-    const [email, setEmail] = useState('')
-    const [password, setPassword] = useState('')
-    const [phone, setPhone] = useState('')
-
-    
-
-    // const submit = async (e) => {
-    //     e.preventDefault()
-
-    //     const response = await fetch(`${process.env.REACT_APP_URL}/signup`, {
-    //         method: 'POST',
-    //         headers: {
-    //             'Content-Type': 'application/json',
-    //         },
-    //         body: JSON.stringify(
-    //         first_name,
-    //         last_name,
-    //         password,
-    //         email,
-    //         phone,
-    //         )
-    //     })
-
-    //     const content = await response.json()
-    //     console.log(content)
-    // }
 
     
     return (  
@@ -41,40 +13,28 @@ const Register = () => {
             <Form action='/signup' method='POST'>
                 <h1 className="h3 mb-3 fw-normal">Please Signup</h1>
 
-                {/* <div className="form-floating">
-                <input className="form-control" id="floatingInput" placeholder="Name" required
-                    onChange={e => setName(e.target.value)}
-                />
-                <label htmlFor="floatingInput">Name</label>
-                </div> */}
                 <div className="form-floating">
-                <input type="text" className="form-control" id="floatingInput" placeholder="First Name" name='first_name'
-                    // onChange={e => setFirstName(e.target.value)}
-                />
+                <input type="text" className="form-control" id="floatingInput" placeholder="First Name" name='first_name'/>
                 <label htmlFor="floatingInput">First Name</label>
                 </div>
+
                 <div className="form-floating">
-                <input type="text" className="form-control" id="floatingInput" placeholder="Last Name" name='last_name'
-                    // onChange={e => setLastName(e.target.value)}
-                />
+                <input type="text" className="form-control" id="floatingInput" placeholder="Last Name" name='last_name'/>
                 <label htmlFor="floatingInput">Last Name</label>
                 </div>
+
                 <div className="form-floating">
-                <input type="email" className="form-control" id="floatingInput" placeholder="name@example.com" required name='email'
-                    // onChange={e => setEmail(e.target.value)}
-                />
+                <input type="email" className="form-control" id="floatingInput" placeholder="name@example.com" required name='email'/>
                 <label htmlFor="floatingInput">Email address</label>
                 </div>
+
                 <div className="form-floating">
-                <input type="password" className="form-control" id="floatingPassword" placeholder="Password" required name='password'
-                    // onChange={e => setPassword(e.target.value)}
-                />
+                <input type="password" className="form-control" id="floatingPassword" placeholder="Password" required name='password'/>
                 <label htmlFor="floatingPassword">Password</label>
                 </div>
+
                 <div className="form-floating">
-                <input type="text" className="form-control" id="floatingPassword" placeholder="Phone" name='phone'
-                    // onChange={e => setPhone(e.target.value)}
-                />
+                <input type="text" className="form-control" id="floatingPassword" placeholder="Phone" name='phone'/>
                 <label htmlFor="floatingPassword">Phone</label>
                 </div>
 

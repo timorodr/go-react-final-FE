@@ -13,8 +13,7 @@ import OpenAIDrugInteraction from "./pages/OpenAIDrugInteraction";
 import { loginAction, signupAction } from "./actions";
 import Landing from "./pages/Landing";
 
-  
-//   import { cardLoader, deckLoader } from "./loaders";
+
  
   
   const router = createBrowserRouter(
