@@ -53,7 +53,7 @@ const Landing = () => {
                 </div>
                 <div class="overflow-hidden" style={{maxHeight: 300}}>
                 <div class="container px-5">
-                    <img src="https://www.pridepharmacysd.com/sites/default/files/page_pridepharmacy_drug-interaction-screening.png" class="img-fluid border rounded-3 shadow-lg mb-4" alt="Example image" width="700" height="500" loading="lazy"/>
+                    <img src="https://www.superthrifty.com/wp-content/uploads/2021/10/AdobeStock_MedicationSafety-e1634572736307.png" class="img-fluid border rounded-3 shadow-lg mb-4" alt="Example image" width="700" height="500" loading="lazy"/>
                 </div>
                 </div>
             </div>
