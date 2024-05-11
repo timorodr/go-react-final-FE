@@ -43,7 +43,7 @@ const Landing = () => {
 
             <div class="b-example-divider"></div>
 
-             <div class="px-4 pt-5 my-5 text-center border-bottom">
+             <div class="px-4 pt-5 my-5 text-center">
                 <h1 class="display-4 fw-bold text-body-emphasis">AI Powered Drug Interaction Scanner</h1>
                 <div class="col-lg-6 mx-auto">
                 <p class="lead mb-4">Worried about conflicting medications? This AI-powered drug interaction checker analyzes medications you enter in a text field, instantly searching for any potential negative interactions to help keep you safe and informed.</p>
@@ -53,10 +53,12 @@ const Landing = () => {
                 </div>
                 <div class="overflow-hidden" style={{maxHeight: 300}}>
                 <div class="container px-5">
-                    <img src="https://www.superthrifty.com/wp-content/uploads/2021/10/AdobeStock_MedicationSafety-e1634572736307.png" class="img-fluid border rounded-3 shadow-lg mb-4" alt="Example image" width="700" height="500" loading="lazy"/>
+                    <img src="https://i.imgur.com/rvq3ts8.png" class="img-fluid border rounded-3 shadow-lg mb-4" alt="Example image" width="700" height="500" loading="lazy"/>
                 </div>
                 </div>
             </div>
+
+            {/* <div class="b-example-divider"></div> */}
            
         </div>
     )
