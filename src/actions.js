@@ -40,7 +40,7 @@ export const loginAction = async ({request}) => {
     const newUser = {
         email: formData.get('email'),
         password: formData.get('password')
-        // phone: formData.get('phone')
+
     }
 
     //make the request to login
