@@ -14,7 +14,7 @@ const Landing = () => {
     const navigate = useNavigate()
 
     const medList = () => {
-        navigate(`/user/entry/create/${userID}`); // Navigate away when done
+        navigate(`/user/entry/create/${userID}`); // Navigate away when done.
     };
 
     const drugInteractionPage = () => {
