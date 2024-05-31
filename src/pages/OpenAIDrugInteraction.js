@@ -12,6 +12,7 @@ const OpenAIDrugInteraction = () => {
     const [drug, setDrug] = useState("")
     const [aiAnswer, setAiAnswer] = useState("")
 
+    //May have to adjust prompt to limit amount of characters in response to avoid billing
     const APIBody = {
         "model": "gpt-3.5-turbo-instruct",
         "prompt": "You are an expert in medicine. Please identify if there are any drug interactions between the following:" + drug,
